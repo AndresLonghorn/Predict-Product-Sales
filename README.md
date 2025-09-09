@@ -1,18 +1,30 @@
 # 🎮 Video Game Genre Sales Analysis by Platform
 
 ## 📌 Project Overview
-This project aims to help video game companies understand which genres perform best across different gaming platforms. By analyzing historical sales data and applying machine learning models, we can identify key patterns and predictive factors that influence global sales performance and thus profits.
+This project aims to help video game companies understand which genres perform best across different gaming platforms. As physical copies of video games are phasing out and becoming downloadable, video game companies still need to manage cost of doing business. By analyzing historical sales data and applying machine learning models, we can identify key patterns and predictive factors that influence global sales performance and thus improve gross margins by producing more genres that buyers want.
 Below summarizes, the data, machine learning models used, results and conclusions. 
 
 ## 📊 Dataset
 The dataset includes video game sales information with features such as:
-- Regional sales: `NA_Sales`, `EU_Sales`, `JP_Sales`, `Other_Sales`
-- Metadata: `Platform`, `Year`, `Genre`, `Publisher`
-- Target variable: `Global_Sales`
+- Regional Sale Data: North American `NA_Sales`, European `EU_Sales`, Japanese `JP_Sales`, Other Countries, `Other_Sales`, Total Sales `Global_Sales`
+- Metadata: Gaming console `Platform`, `Year`, Video game company `Publisher`
+- Target variable: Game genre `Genre`,
+
+<img width="320" height="236" alt="image" src="https://github.com/user-attachments/assets/3a743043-5c13-460a-9a28-187d2c56b9da" />
+
+- North America is the largest regional purchaser of video games in the dataset
+  
+<img width="494" height="247" alt="image" src="https://github.com/user-attachments/assets/962c77bb-c56f-487b-ad35-79193dd9783a" />
+
+- Sale trend per region
+
+<img width="488" height="326" alt="image" src="https://github.com/user-attachments/assets/6ad9b8b8-1f80-47eb-ab59-a8cba451b15c" />
+
+- Top 5 sellers by region
 
 ## 🧠 Modeling Approach
-We used a **Random Forest Classifier** to predict video game genres based on sales and metadata. The model was trained and evaluated using:
-- Train/Test split
+We used a **Decision Tree** & **Random Forest Classifier** to predict video game genres based on sales and metadata.
+-  Train/Test split
 - Accuracy, Precision, Recall, F1-Score
 - Confusion Matrix
 - Feature Importance Analysis
