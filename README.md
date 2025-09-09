@@ -1,44 +1,52 @@
-# Predict Product Sales with AI (Decision Tree Models)
-## Overview
-This project explores the use of Decision Tree classification to predict future product sales based on historical data. The goal is to identify patterns and features that influence sales outcomes, enabling smarter forecasting and business decisions.
+# 🎮 Video Game Genre Sales Analysis by Platform
 
-## Dataset
+## 📌 Project Overview
+This project aims to help video game companies understand which genres perform best across different gaming platforms. By analyzing historical sales data and applying machine learning models, we can identify key patterns and predictive factors that influence global sales performance and thus profits.
+Below summarizes, the data, machine learning models used, results and conclusions. 
 
-The dataset includes various product-related features such as:
-- Product category
-- Sales volume
-- Pricing
-- Promotion status
-- Store location
-- Seasonal indicators
+## 📊 Dataset
+The dataset includes video game sales information with features such as:
+- Regional sales: `NA_Sales`, `EU_Sales`, `JP_Sales`, `Other_Sales`
+- Metadata: `Platform`, `Year`, `Genre`, `Publisher`
+- Target variable: `Global_Sales`
+
 ## 🧠 Modeling Approach
-- **Model Used**: Decision Tree Classifier
-- **Target Variable**: Sales category (e.g., low, medium, high)
-- **Evaluation Metrics**: Accuracy, Precision, Recall, F1-Score
+We used a **Random Forest Classifier** to predict video game genres based on sales and metadata. The model was trained and evaluated using:
+- Train/Test split
+- Accuracy, Precision, Recall, F1-Score
+- Confusion Matrix
+- Feature Importance Analysis
+
+### 🔍 Key Modeling Steps
+- Label encoding for categorical variables
+- Hyperparameter tuning for optimal tree depth and split criteria
+- Visualization of classification performance and confusion matrix
 
 ## ✅ Results
-- **Overall Accuracy**: 81%
-- **Class 0 & 1**: High precision and recall (F1-score ~0.86)
-- **Class 2**: Lower recall (0.55), indicating room for improvement
+- **Model Accuracy**: ~89.2%
+- **Cross-Validation Score**: ~96%
+- **ROC AUC Score**: ~99.5%
+- Balanced performance across most genre classes
+- Strong generalization with minimal overfitting
 
-## 🔍 Key Highlights
-- The model effectively identifies products likely to sell well.
-- Feature importance analysis reveals key drivers of sales.
-- Can be used to support inventory planning and promotional strategies.
-- Offers a foundation for more advanced forecasting models (e.g., Random Forest, Gradient Boosting).
+## 📈 Key Insights for Game Companies
+- **Regional sales** (especially NA and EU) are strong predictors of global success.
+- Certain genres consistently outperform others on specific platforms.
+- Feature importance analysis reveals which attributes drive genre classification.
+- Confusion matrix and classification report help identify areas for improvement in genre targeting.
 
-## 🚀 Future Enhancements
-- Improve Class 2 prediction using data balancing techniques.
-- Explore ensemble models for better generalization.
-- Integrate time-series elements for dynamic forecasting.
+## 📦 Deliverables
+- Decision Tree and Random Forest models
+- Performance visualizations (bar charts, confusion matrix)
+- Feature importance graphs
+- Classification report summaries
 
-## 🛠️ How to Run
-1. Clone the repository.
-2. Open `Predicting Sales.ipynb` in Jupyter Notebook.
-3. Run all cells to preprocess data, train the model, and view results.
+## 🚀 Future Work
+- Expand dataset with more recent titles and platforms
+- Explore ensemble models like Gradient Boosting
+- Integrate time-series analysis for sales trends
 
-## 📄 License
-MIT License
+---
 
 ## 👤 Author
 Andres Salcido
