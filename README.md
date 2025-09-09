@@ -24,11 +24,9 @@ The dataset includes video game sales information with features such as:
 
 ## 🧠 Modeling Approach
 We used a **Decision Tree** & **Random Forest Classifier** to predict video game genres based on sales and metadata.
--- Model Accuracy: 91%
-  Mean of Cross-Validation Score: 97%
-  ROC & AUC Score: 99%
--  Train/Test split
-- Accuracy, Precision, Recall, F1-Score
+-  Train/Test split: 20% train, 80% test.
+- Models: Cross-validation, ROC & AUC, Accuracy, Precision, Recall, F1-Score
+- Decision Tree 
 - Confusion Matrix
 - Feature Importance Analysis
 
